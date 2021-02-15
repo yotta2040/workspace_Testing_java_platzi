@@ -1,10 +1,16 @@
 package com.example.demo.Player;
 
+import java.util.Random;
+
 public class Dice {
 
     private int sides;
 
+    public Dice(int sides) {
+        this.sides = sides;
+    }
+
     public int roll(){
-        return 1;
+        return new Random().nextInt(sides)+1;
     }
 }
